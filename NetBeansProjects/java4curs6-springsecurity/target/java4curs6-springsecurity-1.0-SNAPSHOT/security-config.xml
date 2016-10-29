@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+">
+    <http auto-config="true" use-expression="true">
+		<intercept-url pattern="/**" access="permitAll" />
+                <form-login 
+                    login-page="/login"
+                    default-target-url="/success.htm"
+                    authentication-failure-url="/login.htm?error"
+                    username-parameter="j_username"
+                    password-parameter="j_password" />
+                <logout logout-success-url="/login.htm" />
+    </http>
+    
+    <authentication-manager>
+	  <authentication-provider>
+              <password-encoder hash="md5" />
+              <jdbc-user-service 
+                data-source-ref="datasource"
+                users-by-username-query="select u.username, u.password, u.enabled from users u where u.username=?"
+                authorities-by-username-query=
+                "select u.username, ur.role from users u left join user_roles ur on u.id=ur.username where u.username=?"
+              />
+	  </authentication-provider>
+	</authentication-manager>
+        <global-method-security pre-post-annotations="enabled" />
+</beans>

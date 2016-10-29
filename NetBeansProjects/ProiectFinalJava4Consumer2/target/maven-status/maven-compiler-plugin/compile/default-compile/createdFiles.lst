@@ -1,0 +1,7 @@
+com\stefanbanu\main\Person.class
+com\stefanbanu\dao\UserDao.class
+com\stefanbanu\service\MainService.class
+com\stefanbanu\main\Main.class
+com\stefanbanu\db\UsersDB.class
+com\stefanbanu\db\UsersDB_.class
+com\stefanbanu\config\ProjectConfig.class

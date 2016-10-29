@@ -1,0 +1,6 @@
+ro\telacad\beans\LoginBean.class
+ro\telacad\config\ProjectConfig.class
+ro\telacad\config\WebConfig.class
+ro\telacad\controller\MainController.class
+ro\telacad\app\MyAppInitializer.class
+ro\telacad\service\LoginService.class

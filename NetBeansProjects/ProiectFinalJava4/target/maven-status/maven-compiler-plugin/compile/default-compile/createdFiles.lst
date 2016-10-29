@@ -1,0 +1,7 @@
+com\stefanbanu\service\UserService.class
+com\stefanbanu\model\UserDB.class
+com\stefanbanu\controllermb\UserMB.class
+com\stefanbanu\dao\UserDao.class
+com\stefanbanu\controllermb\UtilClass.class
+com\stefanbanu\model\UserDB_.class
+com\stefanbanu\config\ProjectConfig.class

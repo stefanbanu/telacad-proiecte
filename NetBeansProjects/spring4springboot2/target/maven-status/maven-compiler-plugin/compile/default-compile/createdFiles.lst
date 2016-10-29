@@ -1,0 +1,4 @@
+com\stefanbanu\main\MainClass.class
+com\stefanbanu\service\PersonService.class
+com\stefanbanu\model\Person.class
+com\stefanbanu\controller\PersonController.class

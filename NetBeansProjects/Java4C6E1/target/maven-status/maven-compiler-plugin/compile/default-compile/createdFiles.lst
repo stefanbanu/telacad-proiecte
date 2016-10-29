@@ -1,0 +1,3 @@
+ro\marian\vicea\model\User.class
+ro\marian\vicea\dao\UserDao.class
+ro\marian\vicea\services\LoginService.class
